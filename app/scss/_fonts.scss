@@ -82,9 +82,25 @@
 }
 
 
+@font-face {
+  font-family: 'CODE Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('CODE Bold'),
+    url('../font/CODE Bold.woff') format('woff2'),
+    url('../fonts/CODE Bold.woff') format('woff');
+  font-display: swap;
+}
 
-
-
+@font-face {
+  font-family: 'CODE Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('CODE Light'),
+    url('../font/CODE Light.woff') format('woff2'),
+    url('../fonts/CODE Light.woff') format('woff');
+  font-display: swap;
+}
 
 
 // @font-face {

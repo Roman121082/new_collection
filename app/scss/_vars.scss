@@ -49,6 +49,16 @@ $accent: #1a1a1a;
   font-weight: 700;
 }
 
+%code-700 {
+  font-family: 'CODE Bold', sans-serif;
+  font-weight: 700;
+}
+
+%code-300 {
+  font-family: 'CODE Light', sans-serif;
+  font-weight: 300;
+}
+
 // %btn {
 //   padding: 12px 26px;
 //   text-transform: uppercase;

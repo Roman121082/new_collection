@@ -1,89 +1,13 @@
 html,
 body {
-  background-color: #fff;
+  background-color: #897e93;
 }
 
 
-.container-top {
-  max-width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-  background-image: url(../images/bg-top.jpg);
-  background-size: cover;
-  background-position: top center;
-  min-height: 800px;
-  border: 2px solid red;
-}
 
 
 .container {
-  max-width: 1435px;
+  max-width: 1375px;
   margin: 0 auto;
   padding: 0 15px;
-  border: 2px solid red;
 }
-
-
-// a {
-//   font-size: 16px;
-//   color: $default;
-//   line-height: 26px;
-//   font-weight: 500;
-// }
-
-
-// .text {
-//   text-align: center;
-//   max-width: 570px;
-//   margin: 0 auto 55px;
-// }
-
-// .breadcrumbs {
-//   display: inline-flex;
-//   justify-content: center;
-//   padding-left: 25px;
-//   position: relative;
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     background-image: url(../images/icons/home-icon.svg);
-//     width: 16px;
-//     height: 16px;
-//     left: 0;
-//     top: 4px;
-//   }
-
-// &__list {
-//   display: flex;
-// }
-
-// &__item {
-//   color: #727272;
-//   padding-right: 40px;
-//   position: relative;
-
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     background-image: url(../images/icons/angle-right.svg);
-//     width: 9px;
-//     height: 10px;
-//     right: 15px;
-//     top: 9px;
-//   }
-
-//   &:last-child {
-//     color: $accent-color;
-//     padding-right: 0;
-
-//     &::after {
-//       display: none;
-//     }
-//   }
-// }
-
-// &__link {
-//   color: inherit
-// }}
