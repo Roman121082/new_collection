@@ -61,7 +61,7 @@
   @extend %code-300;
   max-width: 350px;
   font-size: 85px;
-  line-height: 65px;
+  line-height: 80px;
   z-index: 10;
   position: absolute;
   top: 285px;
@@ -140,18 +140,20 @@
 
 // БУРГЕР КОНЕЦ
 
-.tabs {
-  padding-top: 220px;
-  font-size: 50px;
-  color: #826f85;
-  @extend %code-300;
-}
+
 
 .tabs-wrapper {
   height: 320px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 140px;
+  border: none;
+}
+
+.tabs {
+  padding-top: 220px;
+  font-size: 50px;
+  color: #826f85;
+  @extend %code-300;
 }
 
 .tabs-1 {
@@ -179,21 +181,214 @@
   padding-left: 50px;
 }
 
-.tabs.tabs--active {
-  @extend %code-700;
+
+.mixitup-control-active {
+  .tab {
+    @extend %code-700;
+    color: #e84f88;
+  }
+}
+
+
+.tabs-content {
+  display: none;
+}
+
+.tabs-content,
+.tabs-content__active {
+  display: block;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 1350px;
+  margin-bottom: 50px;
+
+  &__item-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+
+  &__item-2 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row: span 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__item-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__item-4 {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__item-5 {
+    grid-column-start: 4;
+    grid-column-end: span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__item-6 {
+    grid-column-start: 5;
+    grid-column-end: span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__item-7 {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__item-8 {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__item-9 {
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__item-10 {
+    grid-column-start: 5;
+    grid-column-end: span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+}
+
+.tabs-content__btn {
+  width: 100%;
+  height: 90px;
+  background-color: #f9f9f8;
+  border: none;
   color: #e84f88;
+  @extend %dmsans-700;
 }
 
 
 
-.tab--active .tabs-container {}
+.top-trends {
 
-.tabs-content {}
+  &__inner {}
 
-.tabs-content--active {}
+  &__item {
+    min-height: 490px;
+  }
+
+  &__item-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-box {
+    display: flex;
+    background-color: #f4f0f0;
+    align-items: end;
+    justify-content: center;
+    max-width: 490px;
+    width: 100%;
+  }
+
+  &__img {
+    height: 430px;
+    background-color: #f4f0f0;
+
+  }
+
+  &__content {
+    padding: 60px 70px 55px 70px;
+    background-color: #f8f5f5;
+    width: 100%;
+
+  }
+
+  &__title {
+    @extend %code-300;
+    font-size: 36px;
+    line-height: 48px;
+    color: #e84f88;
+  }
+
+  &__sub-title {
+    @extend %code-700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #e84f88;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 30px;
+    width: 513px;
+  }
+
+  &__link {
+    padding: 10px 25px;
+    background-color: #51abc8;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  right: 80px;
+  top: 220px;
+
+  button {
+    width: 12px;
+    height: 12px;
+    font-size: 0px;
+    border-radius: 50%;
+    background-color: #d3cece;
+    border: none;
+  }
+}
 
 
+.slick-active {
+  button {
+    background-color: #e84f88;
+  }
+}
 
 
+.tabs-container {}
 
-@import "media";
+
+// @import "media";
