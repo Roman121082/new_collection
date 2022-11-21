@@ -22,17 +22,31 @@ $(function () {
 
 
 
-  $('.tabs').on('click', function (e) {
-    e.preventDefault();
+  // $('.tabs').on('click', function (e) {
+  //   e.preventDefault();
 
-    $('.tabs').removeClass('tabs--active');
-    $('.producrt-tabs__content-item').removeClass('tabs__content--active');
+  //   $('.tabs').removeClass('tabs--active');
+  //   $('.tabs-content').removeClass('tabs-content__active');
 
-    $(this).addClass('tabs--active');
-    $($(this).attr('href')).addClass('tabs__content--active');
+  //   $(this).addClass('tabs--active');
+  //   $($(this).attr('href')).addClass('tabs-content__active');
+  // });
+
+
+  var mixer = mixitup('.tabs-container', {
+    load: {
+      filter: '.category-a'
+    }
   });
 
 
+  $('.top-trends__slider').slick({
+    fade: true,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
 
 });
 
