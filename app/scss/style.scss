@@ -335,6 +335,7 @@
   }
 
   &__title {
+    position: relative;
     @extend %code-300;
     font-size: 36px;
     line-height: 48px;
@@ -346,7 +347,17 @@
     font-size: 36px;
     line-height: 48px;
     color: #e84f88;
+
+    &::before {
+      content: '2022';
+      position: absolute;
+      font-size: 110px;
+      color: rgba(81, 171, 200, 0.188);
+      top: 110px;
+      right: 180px;
+    }
   }
+
 
   &__text {
     margin-bottom: 35px;
@@ -388,7 +399,125 @@
 }
 
 
-.tabs-container {}
+.partners {
+  &__inner {
+    padding: 35px 110px 25px 135px;
+  }
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    @extend %code-700;
+    color: #d9d9d9;
+    font-size: 30px;
+  }
+}
+
+
+.footer {
+
+  &__inner {
+    height: 175px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 75px;
+    padding-right: 40px;
+  }
+}
+
+.footer-info {
+  &__list {
+    display: flex;
+    margin-bottom: 7px;
+    padding-left: 0;
+    padding-right: auto;
+  }
+
+  &__item {
+    font-size: 15px;
+    @extend %code-700;
+    color: rgb(145, 145, 145);
+    margin-right: 17px;
+  }
+
+  &__link {
+    transition: all 0.3s;
+
+    &:hover {
+      color: #e84f88;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: rgb(145, 145, 145);
+  }
+}
+
+.footer-box {
+  &__social {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+  }
+
+  &__social-link {
+    margin-left: 20px;
+    transition: all 0.7s;
+  }
+
+  &__social-link {
+    path {
+      transition: all 0.3s;
+    }
+  }
+
+  &__social-link:hover {
+    path {
+      fill: #e84f88;
+      opacity: 1;
+    }
+  }
+
+
+
+  &__inner {
+    display: flex;
+  }
+
+  &__form {}
+
+  &__input {
+    border: none;
+    height: 35px;
+    padding: 0 20px;
+    width: 255px;
+  }
+
+  &__input::placeholder {
+    color: rgb(137, 126, 147);
+  }
+
+  &__btn {
+    color: #fff;
+    @extend %code-700;
+    display: inline-block;
+    height: 35px;
+    padding: 10px 20px;
+    background-color: #e84f88;
+  }
+}
+
+
+
+
+
+
 
 
 // @import "media";
