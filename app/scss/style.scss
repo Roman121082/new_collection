@@ -9,9 +9,14 @@
   background-image: url(../images/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #5b3f61;
 
   &__inner {
     display: flex;
@@ -25,14 +30,52 @@
     margin-left: 110px;
   }
 
+  &__menu-item {
+    :hover {
+      color: #e84f88;
+    }
+  }
+
   &__menu-item+.header-top__menu-item {
     margin-left: 45px;
   }
 
-  &__user {}
+  &__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 }
 
+.search {
+  padding-right: 64px;
+  position: relative;
+
+  :hover {
+    color: #e84f88;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icon/search.svg);
+    height: 17px;
+    width: 16px;
+    top: 0;
+    right: 27px;
+    object-fit: cover;
+
+  }
+}
+
+.basket {
+  margin-right: 37px;
+}
+
+.avatar {
+  margin-right: 20px;
+}
 
 
 
@@ -54,6 +97,7 @@
   &__img {
     margin: 0 auto;
     height: 690px;
+    object-fit: cover;
   }
 }
 
@@ -65,7 +109,7 @@
   z-index: 10;
   position: absolute;
   top: 285px;
-  left: 316px;
+  left: 315px;
 }
 
 .title-1 {
@@ -84,8 +128,49 @@
 // БУРГЕР
 .burger {
   display: none;
-  margin-right: 60px;
-  margin-top: 30px;
+  margin-left: 35px;
+  margin-top: -8px;
+  cursor: pointer;
+
+  span {
+    height: 4px;
+    width: 30px;
+    background-color: #5b3f61;
+    display: block;
+  }
+
+  span+span {
+    margin-top: 5px;
+  }
+}
+
+.burger__menu-list {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 50px;
+  width: 90%;
+  transition: all 0.5s;
+  z-index: 5;
+  transform: translateY(-150%);
+
+  ul {
+    text-align: center;
+  }
+
+  li+li {
+    margin-top: 30px;
+  }
+
+}
+
+.burger__menu-list--active {
+  transform: translateY(0%);
 }
 
 .menu__btn {
@@ -192,7 +277,149 @@
 
 .tabs-content {
   display: none;
+
+  &__item-box {
+    background-color: rgb(109, 176, 198);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0.69;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item-info {
+    position: absolute;
+    top: 100%;
+    height: 15%;
+    width: 100%;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+
+    &__item-infobox {
+      align-items: end;
+      height: 40px;
+      @extend %code-700;
+    }
+  }
+
+  &__item-size {
+    display: flex;
+    align-items: end;
+  }
+
+  &__item-title {
+    color: #5b3f61;
+  }
+
+  &__item-list--size,
+  &__item-list--color {
+    display: flex;
+  }
+
+  &__item-list--size {
+    padding-right: 5px;
+    color: #89838a;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-right: 5px;
+    }
+  }
+
+  &__item-list--color {
+    padding-left: 10px;
+    transform: translateY(-38%);
+
+    li {
+      margin-right: 10px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .tabs-content__item-box {
+        height: 85%;
+      }
+
+      .tabs-content__item-info {
+        top: 85%;
+        align-items: center;
+        display: flex;
+
+        .price {
+          @extend %code-700;
+          color: #e84f88;
+          font-size: 20px;
+        }
+
+      }
+
+      .tabs-content__item-btn {
+        display: inline-block;
+
+      }
+    }
+  }
+
+  &__item-btn {
+    border: 2px solid #fff;
+    padding: 7px 17px;
+    color: #fff;
+    text-transform: uppercase;
+    display: none;
+  }
+
+  &__item-add {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    display: flex;
+
+    a+a {
+      margin-left: 7px;
+    }
+  }
+
+  &__item-link {
+    &:hover {
+      path {
+        fill: #fff;
+      }
+    }
+  }
 }
+
+.tabs-content__item-list--white,
+.tabs-content__item-list--red,
+.tabs-content__item-list--blue {
+  width: 10px;
+  height: 10px;
+}
+
+.tabs-content__item-list--white {
+  background-color: #fff;
+  border: 1px solid #d9d4da;
+}
+
+.tabs-content__item-list--red {
+  background-color: #ee4a4a;
+}
+
+.tabs-content__item-list--blue {
+  background-color: #99e4e7;
+}
+
 
 .tabs-content,
 .tabs-content__active {
@@ -515,9 +742,4 @@
 
 
 
-
-
-
-
-
-// @import "media";
+@import "media";

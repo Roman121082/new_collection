@@ -1,11 +1,15 @@
 
 $(function () {
-  $('.header-slider').slick({
-    fade: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
+
+  $('.burger').on('click', function () {
+    $('.burger__menu-list').toggleClass('burger__menu-list--active')
   });
+  // $('.header-slider').slick({
+  //   fade: true,
+  //   arrows: false,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  // });
 
 
 
@@ -48,33 +52,31 @@ $(function () {
     autoplaySpeed: 2000,
   });
 
+
+
 });
 
 
 
 
 
-  // $(".rate-yo").rateYo({
-  //   ratedFill: "green",
-  //   normalFill: "#A0A0A0",
-  //   spacing: "7px",
-  //   numStars: 5,
-  //   starWidth: "35px",
-  //   fullStar: true,
-  // });
-
-
-  // $('.menu__btn').on('click', function () {
-  //   $('.menu-mobile').toggleClass('menu-mobile--active')
-  // });
-
-
-
-
-
-
-
-//  БУРГЕР
-// $('.menu__btn').on('click', function () {
-//   $('.menu__list').toggleClass('menu__list--active')
+// $(".rate-yo").rateYo({
+//   ratedFill: "green",
+//   normalFill: "#A0A0A0",
+//   spacing: "7px",
+//   numStars: 5,
+//   starWidth: "35px",
+//   fullStar: true,
 // });
+
+
+// $('.menu__btn').on('click', function () {
+//   $('.menu-mobile').toggleClass('menu-mobile--active')
+// });
+
+
+
+
+
+
+
