@@ -11,18 +11,43 @@
 
 <body>
   <div class="container">
-    <header class="header">
-      <div class="header-top">
 
+    <header class="header">
+      <div class="burger__menu-list">
+        <ul>
+          <li class="burger-top__menu-item"><a href="#">TRENDS</a> </li>
+          <li class="burger-top__menu-item"><a href="#">COLLECTIONS</a></li>
+          <li class="burger-top__menu-item"><a href="#">DESIGNERS</a></li>
+        </ul>
+      </div>
+
+      <div class="header-top">
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="header-top__inner">
           <ul class="header-top__menu">
-            <li class="header-top__menu-item">TRENDS</li>
-            <li class="header-top__menu-item">COLLECTIONS</li>
-            <li class="header-top__menu-item">DESIGNERS</li>
+            <li class="header-top__menu-item"><a href="#">TRENDS</a> </li>
+            <li class="header-top__menu-item"><a href="#">COLLECTIONS</a></li>
+            <li class="header-top__menu-item"><a href="#">DESIGNERS</a></li>
           </ul>
-          <div class="header-top__user"></div>
+        </div>
+
+        <div class="header-top__user">
+          <div class="search">
+            <a>SEARCH</a>
+          </div>
+          <div class="basket">
+            <img src="images/icon/basket.svg" alt="">
+          </div>
+          <div class="avatar">
+            <img src="images/icon/avatar.jpg" alt="">
+          </div>
         </div>
       </div>
+
       <div class="header-slider">
 
         <div class="header-slider__item">
@@ -35,7 +60,7 @@
           </div>
           <img class="header-slider__img" src="images/slider/1.png" alt="">
         </div>
-        <div class="header-slider__item">
+        <!-- <div class="header-slider__item">
           <div class="header-slider__content">
             <h1 class="header-slider__title">
               <span class="title-1">New</span>
@@ -54,7 +79,7 @@
             </h1>
           </div>
           <img class="header-slider__img" src="images/slider/1.png" alt="">
-        </div>
+        </div> -->
 
 
       </div>
@@ -62,7 +87,7 @@
     </header>
   </div>
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="tabs-wrapper">
       <div data-filter=".category-a" data-sort="order:asc" class="tabs tabs-1">
         <a class="tab">SPRING</a>
@@ -80,45 +105,386 @@
     <div class="tabs-container">
 
       <div class="tabs-content mix category-a" data-order="1">
-        <div class="tabs-content__item-1" style="background-image: url('images/grid/1.jpg');">
+        <div class="tabs-content__item tabs-content__item-1" style="background-image: url('images/grid/1.jpg')">
+          <div class="tabs-content__item-box">
+            <a class="tabs-content__item-btn" href="#">view</a>
+          </div>
+          <div class="tabs-content__item-info">
+            <div class="tabs-content__item-infobox">
+              <a class="tabs-content__item-title">MADEWELL SKIRT</a>
+              <div class="tabs-content__item-size">
+                <ul class="tabs-content__item-list--size">
+                  <li>S,</li>
+                  <li>M,</li>
+                  <li>L</li>
+                </ul>
+                <span>|</span>
+                <ul class="tabs-content__item-list--color">
+                  <li class="tabs-content__item-list--white"></li>
+                  <li class="tabs-content__item-list--red"></li>
+                  <li class="tabs-content__item-list--blue"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="price">$56</div>
+          </div>
           <a class="tabs-content__link" href="#" alt="grid__img">
           </a>
+          <div class="tabs-content__item-add">
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="16px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M17.140,1.487 C16.182,0.527 14.910,-0.001 13.556,-0.001 C12.202,-0.001 10.929,0.527 9.972,1.487 L9.500,1.960 L9.028,1.487 C8.071,0.527 6.798,-0.001 5.444,-0.001 C4.091,-0.001 2.818,0.527 1.860,1.487 C-0.116,3.468 -0.116,6.692 1.860,8.672 L8.942,15.771 C9.058,15.888 9.202,15.959 9.352,15.987 C9.403,15.997 9.454,16.001 9.505,16.001 C9.705,16.001 9.906,15.925 10.058,15.771 L17.140,8.672 C19.116,6.692 19.116,3.468 17.140,1.487 ZM16.032,7.563 L9.500,14.111 L2.967,7.563 C1.602,6.194 1.602,3.966 2.967,2.596 C3.629,1.933 4.509,1.569 5.444,1.569 C6.380,1.569 7.259,1.933 7.921,2.596 L8.946,3.625 C9.240,3.919 9.760,3.919 10.054,3.625 L11.079,2.596 C11.740,1.933 12.620,1.569 13.556,1.569 C14.491,1.569 15.371,1.933 16.032,2.596 C17.398,3.966 17.398,6.194 16.032,7.563 Z" />
+              </svg></a>
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="17px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M9.016,16.991 C4.574,16.991 0.974,13.390 0.974,8.949 C0.974,4.508 4.574,0.908 9.016,0.908 C13.457,0.908 17.057,4.508 17.057,8.949 C17.057,13.390 13.457,16.991 9.016,16.991 ZM9.016,2.358 C5.375,2.358 2.423,5.309 2.423,8.950 C2.423,12.590 5.375,15.542 9.016,15.542 C12.656,15.542 15.608,12.590 15.608,8.950 C15.608,5.309 12.656,2.358 9.016,2.358 ZM9.794,11.953 L8.013,11.953 L8.013,9.888 L5.984,9.888 L5.984,8.107 L8.013,8.107 L8.013,5.998 L9.794,5.998 L9.794,8.107 L11.939,8.107 L11.939,9.888 L9.794,9.888 L9.794,11.953 Z" />
+              </svg></a>
+          </div>
         </div>
-        <div class="tabs-content__item-2" style="background-image: url('images/grid/2.jpg');">
+        <div class="tabs-content__item tabs-content__item-2" style="background-image: url('images/grid/2.jpg');">
           <a class="tabs-content__link" href="#" alt="grid__img">
-          </a>
+            <div class="tabs-content__item-box">
+              <a class="tabs-content__item-btn" href="#">view</a>
+            </div>
+            <div class="tabs-content__item-info">
+              <div class="tabs-content__item-infobox">
+                <a class="tabs-content__item-title">MADEWELL SKIRT</a>
+                <div class="tabs-content__item-size">
+                  <ul class="tabs-content__item-list--size">
+                    <li>S,</li>
+                    <li>M,</li>
+                    <li>L</li>
+                  </ul>
+                  <span>|</span>
+                  <ul class="tabs-content__item-list--color">
+                    <li class="tabs-content__item-list--white"></li>
+                    <li class="tabs-content__item-list--red"></li>
+                    <li class="tabs-content__item-list--blue"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="price">$56</div>
+            </div>
+            <a class="tabs-content__link" href="#" alt="grid__img">
+            </a>
+            <div class="tabs-content__item-add">
+              <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="16px">
+                  <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                    d="M17.140,1.487 C16.182,0.527 14.910,-0.001 13.556,-0.001 C12.202,-0.001 10.929,0.527 9.972,1.487 L9.500,1.960 L9.028,1.487 C8.071,0.527 6.798,-0.001 5.444,-0.001 C4.091,-0.001 2.818,0.527 1.860,1.487 C-0.116,3.468 -0.116,6.692 1.860,8.672 L8.942,15.771 C9.058,15.888 9.202,15.959 9.352,15.987 C9.403,15.997 9.454,16.001 9.505,16.001 C9.705,16.001 9.906,15.925 10.058,15.771 L17.140,8.672 C19.116,6.692 19.116,3.468 17.140,1.487 ZM16.032,7.563 L9.500,14.111 L2.967,7.563 C1.602,6.194 1.602,3.966 2.967,2.596 C3.629,1.933 4.509,1.569 5.444,1.569 C6.380,1.569 7.259,1.933 7.921,2.596 L8.946,3.625 C9.240,3.919 9.760,3.919 10.054,3.625 L11.079,2.596 C11.740,1.933 12.620,1.569 13.556,1.569 C14.491,1.569 15.371,1.933 16.032,2.596 C17.398,3.966 17.398,6.194 16.032,7.563 Z" />
+                </svg></a>
+              <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="17px">
+                  <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                    d="M9.016,16.991 C4.574,16.991 0.974,13.390 0.974,8.949 C0.974,4.508 4.574,0.908 9.016,0.908 C13.457,0.908 17.057,4.508 17.057,8.949 C17.057,13.390 13.457,16.991 9.016,16.991 ZM9.016,2.358 C5.375,2.358 2.423,5.309 2.423,8.950 C2.423,12.590 5.375,15.542 9.016,15.542 C12.656,15.542 15.608,12.590 15.608,8.950 C15.608,5.309 12.656,2.358 9.016,2.358 ZM9.794,11.953 L8.013,11.953 L8.013,9.888 L5.984,9.888 L5.984,8.107 L8.013,8.107 L8.013,5.998 L9.794,5.998 L9.794,8.107 L11.939,8.107 L11.939,9.888 L9.794,9.888 L9.794,11.953 Z" />
+                </svg></a>
+            </div>
         </div>
-        <div class="tabs-content__item-3" style="background-image: url('images/grid/3.jpg');">
+        <div class="tabs-content__item tabs-content__item-3" style="background-image: url('images/grid/3.jpg');">
+          <div class="tabs-content__item-box">
+            <a class="tabs-content__item-btn" href="#">view</a>
+          </div>
+          <div class="tabs-content__item-info">
+            <div class="tabs-content__item-infobox">
+              <a class="tabs-content__item-title">MADEWELL SKIRT</a>
+              <div class="tabs-content__item-size">
+                <ul class="tabs-content__item-list--size">
+                  <li>S,</li>
+                  <li>M,</li>
+                  <li>L</li>
+                </ul>
+                <span>|</span>
+                <ul class="tabs-content__item-list--color">
+                  <li class="tabs-content__item-list--white"></li>
+                  <li class="tabs-content__item-list--red"></li>
+                  <li class="tabs-content__item-list--blue"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="price">$56</div>
+          </div>
           <a class="tabs-content__link" href="#" alt="grid__img">
           </a>
+          <div class="tabs-content__item-add">
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="16px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M17.140,1.487 C16.182,0.527 14.910,-0.001 13.556,-0.001 C12.202,-0.001 10.929,0.527 9.972,1.487 L9.500,1.960 L9.028,1.487 C8.071,0.527 6.798,-0.001 5.444,-0.001 C4.091,-0.001 2.818,0.527 1.860,1.487 C-0.116,3.468 -0.116,6.692 1.860,8.672 L8.942,15.771 C9.058,15.888 9.202,15.959 9.352,15.987 C9.403,15.997 9.454,16.001 9.505,16.001 C9.705,16.001 9.906,15.925 10.058,15.771 L17.140,8.672 C19.116,6.692 19.116,3.468 17.140,1.487 ZM16.032,7.563 L9.500,14.111 L2.967,7.563 C1.602,6.194 1.602,3.966 2.967,2.596 C3.629,1.933 4.509,1.569 5.444,1.569 C6.380,1.569 7.259,1.933 7.921,2.596 L8.946,3.625 C9.240,3.919 9.760,3.919 10.054,3.625 L11.079,2.596 C11.740,1.933 12.620,1.569 13.556,1.569 C14.491,1.569 15.371,1.933 16.032,2.596 C17.398,3.966 17.398,6.194 16.032,7.563 Z" />
+              </svg></a>
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="17px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M9.016,16.991 C4.574,16.991 0.974,13.390 0.974,8.949 C0.974,4.508 4.574,0.908 9.016,0.908 C13.457,0.908 17.057,4.508 17.057,8.949 C17.057,13.390 13.457,16.991 9.016,16.991 ZM9.016,2.358 C5.375,2.358 2.423,5.309 2.423,8.950 C2.423,12.590 5.375,15.542 9.016,15.542 C12.656,15.542 15.608,12.590 15.608,8.950 C15.608,5.309 12.656,2.358 9.016,2.358 ZM9.794,11.953 L8.013,11.953 L8.013,9.888 L5.984,9.888 L5.984,8.107 L8.013,8.107 L8.013,5.998 L9.794,5.998 L9.794,8.107 L11.939,8.107 L11.939,9.888 L9.794,9.888 L9.794,11.953 Z" />
+              </svg></a>
+          </div>
         </div>
-        <div class="tabs-content__item-4" style="background-image: url('images/grid/4.jpg');">
+        <div class="tabs-content__item tabs-content__item-4" style="background-image: url('images/grid/4.jpg');">
+          <div class="tabs-content__item-box">
+            <a class="tabs-content__item-btn" href="#">view</a>
+          </div>
+          <div class="tabs-content__item-info">
+            <div class="tabs-content__item-infobox">
+              <a class="tabs-content__item-title">MADEWELL SKIRT</a>
+              <div class="tabs-content__item-size">
+                <ul class="tabs-content__item-list--size">
+                  <li>S,</li>
+                  <li>M,</li>
+                  <li>L</li>
+                </ul>
+                <span>|</span>
+                <ul class="tabs-content__item-list--color">
+                  <li class="tabs-content__item-list--white"></li>
+                  <li class="tabs-content__item-list--red"></li>
+                  <li class="tabs-content__item-list--blue"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="price">$56</div>
+          </div>
           <a class="tabs-content__link" href="#" alt="grid__img">
           </a>
+          <div class="tabs-content__item-add">
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="16px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M17.140,1.487 C16.182,0.527 14.910,-0.001 13.556,-0.001 C12.202,-0.001 10.929,0.527 9.972,1.487 L9.500,1.960 L9.028,1.487 C8.071,0.527 6.798,-0.001 5.444,-0.001 C4.091,-0.001 2.818,0.527 1.860,1.487 C-0.116,3.468 -0.116,6.692 1.860,8.672 L8.942,15.771 C9.058,15.888 9.202,15.959 9.352,15.987 C9.403,15.997 9.454,16.001 9.505,16.001 C9.705,16.001 9.906,15.925 10.058,15.771 L17.140,8.672 C19.116,6.692 19.116,3.468 17.140,1.487 ZM16.032,7.563 L9.500,14.111 L2.967,7.563 C1.602,6.194 1.602,3.966 2.967,2.596 C3.629,1.933 4.509,1.569 5.444,1.569 C6.380,1.569 7.259,1.933 7.921,2.596 L8.946,3.625 C9.240,3.919 9.760,3.919 10.054,3.625 L11.079,2.596 C11.740,1.933 12.620,1.569 13.556,1.569 C14.491,1.569 15.371,1.933 16.032,2.596 C17.398,3.966 17.398,6.194 16.032,7.563 Z" />
+              </svg></a>
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="17px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M9.016,16.991 C4.574,16.991 0.974,13.390 0.974,8.949 C0.974,4.508 4.574,0.908 9.016,0.908 C13.457,0.908 17.057,4.508 17.057,8.949 C17.057,13.390 13.457,16.991 9.016,16.991 ZM9.016,2.358 C5.375,2.358 2.423,5.309 2.423,8.950 C2.423,12.590 5.375,15.542 9.016,15.542 C12.656,15.542 15.608,12.590 15.608,8.950 C15.608,5.309 12.656,2.358 9.016,2.358 ZM9.794,11.953 L8.013,11.953 L8.013,9.888 L5.984,9.888 L5.984,8.107 L8.013,8.107 L8.013,5.998 L9.794,5.998 L9.794,8.107 L11.939,8.107 L11.939,9.888 L9.794,9.888 L9.794,11.953 Z" />
+              </svg></a>
+          </div>
         </div>
-        <div class="tabs-content__item-5" style="background-image: url('images/grid/5.jpg');">
+        <div class="tabs-content__item tabs-content__item-5" style="background-image: url('images/grid/5.jpg');">
+          <div class="tabs-content__item-box">
+            <a class="tabs-content__item-btn" href="#">view</a>
+          </div>
+          <div class="tabs-content__item-info">
+            <div class="tabs-content__item-infobox">
+              <a class="tabs-content__item-title">MADEWELL SKIRT</a>
+              <div class="tabs-content__item-size">
+                <ul class="tabs-content__item-list--size">
+                  <li>S,</li>
+                  <li>M,</li>
+                  <li>L</li>
+                </ul>
+                <span>|</span>
+                <ul class="tabs-content__item-list--color">
+                  <li class="tabs-content__item-list--white"></li>
+                  <li class="tabs-content__item-list--red"></li>
+                  <li class="tabs-content__item-list--blue"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="price">$56</div>
+          </div>
           <a class="tabs-content__link" href="#" alt="grid__img">
           </a>
+          <div class="tabs-content__item-add">
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="16px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M17.140,1.487 C16.182,0.527 14.910,-0.001 13.556,-0.001 C12.202,-0.001 10.929,0.527 9.972,1.487 L9.500,1.960 L9.028,1.487 C8.071,0.527 6.798,-0.001 5.444,-0.001 C4.091,-0.001 2.818,0.527 1.860,1.487 C-0.116,3.468 -0.116,6.692 1.860,8.672 L8.942,15.771 C9.058,15.888 9.202,15.959 9.352,15.987 C9.403,15.997 9.454,16.001 9.505,16.001 C9.705,16.001 9.906,15.925 10.058,15.771 L17.140,8.672 C19.116,6.692 19.116,3.468 17.140,1.487 ZM16.032,7.563 L9.500,14.111 L2.967,7.563 C1.602,6.194 1.602,3.966 2.967,2.596 C3.629,1.933 4.509,1.569 5.444,1.569 C6.380,1.569 7.259,1.933 7.921,2.596 L8.946,3.625 C9.240,3.919 9.760,3.919 10.054,3.625 L11.079,2.596 C11.740,1.933 12.620,1.569 13.556,1.569 C14.491,1.569 15.371,1.933 16.032,2.596 C17.398,3.966 17.398,6.194 16.032,7.563 Z" />
+              </svg></a>
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="17px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M9.016,16.991 C4.574,16.991 0.974,13.390 0.974,8.949 C0.974,4.508 4.574,0.908 9.016,0.908 C13.457,0.908 17.057,4.508 17.057,8.949 C17.057,13.390 13.457,16.991 9.016,16.991 ZM9.016,2.358 C5.375,2.358 2.423,5.309 2.423,8.950 C2.423,12.590 5.375,15.542 9.016,15.542 C12.656,15.542 15.608,12.590 15.608,8.950 C15.608,5.309 12.656,2.358 9.016,2.358 ZM9.794,11.953 L8.013,11.953 L8.013,9.888 L5.984,9.888 L5.984,8.107 L8.013,8.107 L8.013,5.998 L9.794,5.998 L9.794,8.107 L11.939,8.107 L11.939,9.888 L9.794,9.888 L9.794,11.953 Z" />
+              </svg></a>
+          </div>
         </div>
-        <div class="tabs-content__item-6" style="background-image: url('images/grid/6.jpg');">
+        <div class="tabs-content__item tabs-content__item-6" style="background-image: url('images/grid/6.jpg');">
+          <div class="tabs-content__item-box">
+            <a class="tabs-content__item-btn" href="#">view</a>
+          </div>
+          <div class="tabs-content__item-info">
+            <div class="tabs-content__item-infobox">
+              <a class="tabs-content__item-title">MADEWELL SKIRT</a>
+              <div class="tabs-content__item-size">
+                <ul class="tabs-content__item-list--size">
+                  <li>S,</li>
+                  <li>M,</li>
+                  <li>L</li>
+                </ul>
+                <span>|</span>
+                <ul class="tabs-content__item-list--color">
+                  <li class="tabs-content__item-list--white"></li>
+                  <li class="tabs-content__item-list--red"></li>
+                  <li class="tabs-content__item-list--blue"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="price">$56</div>
+          </div>
           <a class="tabs-content__link" href="#" alt="grid__img">
           </a>
+          <div class="tabs-content__item-add">
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="16px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M17.140,1.487 C16.182,0.527 14.910,-0.001 13.556,-0.001 C12.202,-0.001 10.929,0.527 9.972,1.487 L9.500,1.960 L9.028,1.487 C8.071,0.527 6.798,-0.001 5.444,-0.001 C4.091,-0.001 2.818,0.527 1.860,1.487 C-0.116,3.468 -0.116,6.692 1.860,8.672 L8.942,15.771 C9.058,15.888 9.202,15.959 9.352,15.987 C9.403,15.997 9.454,16.001 9.505,16.001 C9.705,16.001 9.906,15.925 10.058,15.771 L17.140,8.672 C19.116,6.692 19.116,3.468 17.140,1.487 ZM16.032,7.563 L9.500,14.111 L2.967,7.563 C1.602,6.194 1.602,3.966 2.967,2.596 C3.629,1.933 4.509,1.569 5.444,1.569 C6.380,1.569 7.259,1.933 7.921,2.596 L8.946,3.625 C9.240,3.919 9.760,3.919 10.054,3.625 L11.079,2.596 C11.740,1.933 12.620,1.569 13.556,1.569 C14.491,1.569 15.371,1.933 16.032,2.596 C17.398,3.966 17.398,6.194 16.032,7.563 Z" />
+              </svg></a>
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="17px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M9.016,16.991 C4.574,16.991 0.974,13.390 0.974,8.949 C0.974,4.508 4.574,0.908 9.016,0.908 C13.457,0.908 17.057,4.508 17.057,8.949 C17.057,13.390 13.457,16.991 9.016,16.991 ZM9.016,2.358 C5.375,2.358 2.423,5.309 2.423,8.950 C2.423,12.590 5.375,15.542 9.016,15.542 C12.656,15.542 15.608,12.590 15.608,8.950 C15.608,5.309 12.656,2.358 9.016,2.358 ZM9.794,11.953 L8.013,11.953 L8.013,9.888 L5.984,9.888 L5.984,8.107 L8.013,8.107 L8.013,5.998 L9.794,5.998 L9.794,8.107 L11.939,8.107 L11.939,9.888 L9.794,9.888 L9.794,11.953 Z" />
+              </svg></a>
+          </div>
         </div>
-        <div class="tabs-content__item-7" style="background-image: url('images/grid/7.jpg');">
+        <div class="tabs-content__item tabs-content__item-7" style="background-image: url('images/grid/7.jpg');">
+          <div class="tabs-content__item-box">
+            <a class="tabs-content__item-btn" href="#">view</a>
+          </div>
+          <div class="tabs-content__item-info">
+            <div class="tabs-content__item-infobox">
+              <a class="tabs-content__item-title">MADEWELL SKIRT</a>
+              <div class="tabs-content__item-size">
+                <ul class="tabs-content__item-list--size">
+                  <li>S,</li>
+                  <li>M,</li>
+                  <li>L</li>
+                </ul>
+                <span>|</span>
+                <ul class="tabs-content__item-list--color">
+                  <li class="tabs-content__item-list--white"></li>
+                  <li class="tabs-content__item-list--red"></li>
+                  <li class="tabs-content__item-list--blue"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="price">$56</div>
+          </div>
           <a class="tabs-content__link" href="#" alt="grid__img">
           </a>
+          <div class="tabs-content__item-add">
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="16px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M17.140,1.487 C16.182,0.527 14.910,-0.001 13.556,-0.001 C12.202,-0.001 10.929,0.527 9.972,1.487 L9.500,1.960 L9.028,1.487 C8.071,0.527 6.798,-0.001 5.444,-0.001 C4.091,-0.001 2.818,0.527 1.860,1.487 C-0.116,3.468 -0.116,6.692 1.860,8.672 L8.942,15.771 C9.058,15.888 9.202,15.959 9.352,15.987 C9.403,15.997 9.454,16.001 9.505,16.001 C9.705,16.001 9.906,15.925 10.058,15.771 L17.140,8.672 C19.116,6.692 19.116,3.468 17.140,1.487 ZM16.032,7.563 L9.500,14.111 L2.967,7.563 C1.602,6.194 1.602,3.966 2.967,2.596 C3.629,1.933 4.509,1.569 5.444,1.569 C6.380,1.569 7.259,1.933 7.921,2.596 L8.946,3.625 C9.240,3.919 9.760,3.919 10.054,3.625 L11.079,2.596 C11.740,1.933 12.620,1.569 13.556,1.569 C14.491,1.569 15.371,1.933 16.032,2.596 C17.398,3.966 17.398,6.194 16.032,7.563 Z" />
+              </svg></a>
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="17px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M9.016,16.991 C4.574,16.991 0.974,13.390 0.974,8.949 C0.974,4.508 4.574,0.908 9.016,0.908 C13.457,0.908 17.057,4.508 17.057,8.949 C17.057,13.390 13.457,16.991 9.016,16.991 ZM9.016,2.358 C5.375,2.358 2.423,5.309 2.423,8.950 C2.423,12.590 5.375,15.542 9.016,15.542 C12.656,15.542 15.608,12.590 15.608,8.950 C15.608,5.309 12.656,2.358 9.016,2.358 ZM9.794,11.953 L8.013,11.953 L8.013,9.888 L5.984,9.888 L5.984,8.107 L8.013,8.107 L8.013,5.998 L9.794,5.998 L9.794,8.107 L11.939,8.107 L11.939,9.888 L9.794,9.888 L9.794,11.953 Z" />
+              </svg></a>
+          </div>
         </div>
-        <div class="tabs-content__item-8" style="background-image: url('images/grid/8.jpg');">
+        <div class="tabs-content__item tabs-content__item-8" style="background-image: url('images/grid/8.jpg');">
+          <div class="tabs-content__item-box">
+            <a class="tabs-content__item-btn" href="#">view</a>
+          </div>
+          <div class="tabs-content__item-info">
+            <div class="tabs-content__item-infobox">
+              <a class="tabs-content__item-title">MADEWELL SKIRT</a>
+              <div class="tabs-content__item-size">
+                <ul class="tabs-content__item-list--size">
+                  <li>S,</li>
+                  <li>M,</li>
+                  <li>L</li>
+                </ul>
+                <span>|</span>
+                <ul class="tabs-content__item-list--color">
+                  <li class="tabs-content__item-list--white"></li>
+                  <li class="tabs-content__item-list--red"></li>
+                  <li class="tabs-content__item-list--blue"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="price">$56</div>
+          </div>
           <a class="tabs-content__link" href="#" alt="grid__img">
           </a>
+          <div class="tabs-content__item-add">
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="16px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M17.140,1.487 C16.182,0.527 14.910,-0.001 13.556,-0.001 C12.202,-0.001 10.929,0.527 9.972,1.487 L9.500,1.960 L9.028,1.487 C8.071,0.527 6.798,-0.001 5.444,-0.001 C4.091,-0.001 2.818,0.527 1.860,1.487 C-0.116,3.468 -0.116,6.692 1.860,8.672 L8.942,15.771 C9.058,15.888 9.202,15.959 9.352,15.987 C9.403,15.997 9.454,16.001 9.505,16.001 C9.705,16.001 9.906,15.925 10.058,15.771 L17.140,8.672 C19.116,6.692 19.116,3.468 17.140,1.487 ZM16.032,7.563 L9.500,14.111 L2.967,7.563 C1.602,6.194 1.602,3.966 2.967,2.596 C3.629,1.933 4.509,1.569 5.444,1.569 C6.380,1.569 7.259,1.933 7.921,2.596 L8.946,3.625 C9.240,3.919 9.760,3.919 10.054,3.625 L11.079,2.596 C11.740,1.933 12.620,1.569 13.556,1.569 C14.491,1.569 15.371,1.933 16.032,2.596 C17.398,3.966 17.398,6.194 16.032,7.563 Z" />
+              </svg></a>
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="17px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M9.016,16.991 C4.574,16.991 0.974,13.390 0.974,8.949 C0.974,4.508 4.574,0.908 9.016,0.908 C13.457,0.908 17.057,4.508 17.057,8.949 C17.057,13.390 13.457,16.991 9.016,16.991 ZM9.016,2.358 C5.375,2.358 2.423,5.309 2.423,8.950 C2.423,12.590 5.375,15.542 9.016,15.542 C12.656,15.542 15.608,12.590 15.608,8.950 C15.608,5.309 12.656,2.358 9.016,2.358 ZM9.794,11.953 L8.013,11.953 L8.013,9.888 L5.984,9.888 L5.984,8.107 L8.013,8.107 L8.013,5.998 L9.794,5.998 L9.794,8.107 L11.939,8.107 L11.939,9.888 L9.794,9.888 L9.794,11.953 Z" />
+              </svg></a>
+          </div>
         </div>
-        <div class="tabs-content__item-9" style="background-image: url('images/grid/9.jpg');">
+        <div class="tabs-content__item tabs-content__item-9" style="background-image: url('images/grid/9.jpg');">
+          <div class="tabs-content__item-box">
+            <a class="tabs-content__item-btn" href="#">view</a>
+          </div>
+          <div class="tabs-content__item-info">
+            <div class="tabs-content__item-infobox">
+              <a class="tabs-content__item-title">MADEWELL SKIRT</a>
+              <div class="tabs-content__item-size">
+                <ul class="tabs-content__item-list--size">
+                  <li>S,</li>
+                  <li>M,</li>
+                  <li>L</li>
+                </ul>
+                <span>|</span>
+                <ul class="tabs-content__item-list--color">
+                  <li class="tabs-content__item-list--white"></li>
+                  <li class="tabs-content__item-list--red"></li>
+                  <li class="tabs-content__item-list--blue"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="price">$56</div>
+          </div>
           <a class="tabs-content__link" href="#" alt="grid__img">
           </a>
+          <div class="tabs-content__item-add">
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="16px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M17.140,1.487 C16.182,0.527 14.910,-0.001 13.556,-0.001 C12.202,-0.001 10.929,0.527 9.972,1.487 L9.500,1.960 L9.028,1.487 C8.071,0.527 6.798,-0.001 5.444,-0.001 C4.091,-0.001 2.818,0.527 1.860,1.487 C-0.116,3.468 -0.116,6.692 1.860,8.672 L8.942,15.771 C9.058,15.888 9.202,15.959 9.352,15.987 C9.403,15.997 9.454,16.001 9.505,16.001 C9.705,16.001 9.906,15.925 10.058,15.771 L17.140,8.672 C19.116,6.692 19.116,3.468 17.140,1.487 ZM16.032,7.563 L9.500,14.111 L2.967,7.563 C1.602,6.194 1.602,3.966 2.967,2.596 C3.629,1.933 4.509,1.569 5.444,1.569 C6.380,1.569 7.259,1.933 7.921,2.596 L8.946,3.625 C9.240,3.919 9.760,3.919 10.054,3.625 L11.079,2.596 C11.740,1.933 12.620,1.569 13.556,1.569 C14.491,1.569 15.371,1.933 16.032,2.596 C17.398,3.966 17.398,6.194 16.032,7.563 Z" />
+              </svg></a>
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="17px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M9.016,16.991 C4.574,16.991 0.974,13.390 0.974,8.949 C0.974,4.508 4.574,0.908 9.016,0.908 C13.457,0.908 17.057,4.508 17.057,8.949 C17.057,13.390 13.457,16.991 9.016,16.991 ZM9.016,2.358 C5.375,2.358 2.423,5.309 2.423,8.950 C2.423,12.590 5.375,15.542 9.016,15.542 C12.656,15.542 15.608,12.590 15.608,8.950 C15.608,5.309 12.656,2.358 9.016,2.358 ZM9.794,11.953 L8.013,11.953 L8.013,9.888 L5.984,9.888 L5.984,8.107 L8.013,8.107 L8.013,5.998 L9.794,5.998 L9.794,8.107 L11.939,8.107 L11.939,9.888 L9.794,9.888 L9.794,11.953 Z" />
+              </svg></a>
+          </div>
         </div>
-        <div class="tabs-content__item-10" style="background-image: url('images/grid/10.jpg');">
+        <div class="tabs-content__item tabs-content__item-10" style="background-image: url('images/grid/10.jpg');">
+          <div class="tabs-content__item-box">
+            <a class="tabs-content__item-btn" href="#">view</a>
+          </div>
+          <div class="tabs-content__item-info">
+            <div class="tabs-content__item-infobox">
+              <a class="tabs-content__item-title">MADEWELL SKIRT</a>
+              <div class="tabs-content__item-size">
+                <ul class="tabs-content__item-list--size">
+                  <li>S,</li>
+                  <li>M,</li>
+                  <li>L</li>
+                </ul>
+                <span>|</span>
+                <ul class="tabs-content__item-list--color">
+                  <li class="tabs-content__item-list--white"></li>
+                  <li class="tabs-content__item-list--red"></li>
+                  <li class="tabs-content__item-list--blue"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="price">$56</div>
+          </div>
           <a class="tabs-content__link" href="#" alt="grid__img">
           </a>
+          <div class="tabs-content__item-add">
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="16px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M17.140,1.487 C16.182,0.527 14.910,-0.001 13.556,-0.001 C12.202,-0.001 10.929,0.527 9.972,1.487 L9.500,1.960 L9.028,1.487 C8.071,0.527 6.798,-0.001 5.444,-0.001 C4.091,-0.001 2.818,0.527 1.860,1.487 C-0.116,3.468 -0.116,6.692 1.860,8.672 L8.942,15.771 C9.058,15.888 9.202,15.959 9.352,15.987 C9.403,15.997 9.454,16.001 9.505,16.001 C9.705,16.001 9.906,15.925 10.058,15.771 L17.140,8.672 C19.116,6.692 19.116,3.468 17.140,1.487 ZM16.032,7.563 L9.500,14.111 L2.967,7.563 C1.602,6.194 1.602,3.966 2.967,2.596 C3.629,1.933 4.509,1.569 5.444,1.569 C6.380,1.569 7.259,1.933 7.921,2.596 L8.946,3.625 C9.240,3.919 9.760,3.919 10.054,3.625 L11.079,2.596 C11.740,1.933 12.620,1.569 13.556,1.569 C14.491,1.569 15.371,1.933 16.032,2.596 C17.398,3.966 17.398,6.194 16.032,7.563 Z" />
+              </svg></a>
+            <a class="tabs-content__item-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="17px">
+                <path fill-rule="evenodd" fill="rgb(158, 140, 161)"
+                  d="M9.016,16.991 C4.574,16.991 0.974,13.390 0.974,8.949 C0.974,4.508 4.574,0.908 9.016,0.908 C13.457,0.908 17.057,4.508 17.057,8.949 C17.057,13.390 13.457,16.991 9.016,16.991 ZM9.016,2.358 C5.375,2.358 2.423,5.309 2.423,8.950 C2.423,12.590 5.375,15.542 9.016,15.542 C12.656,15.542 15.608,12.590 15.608,8.950 C15.608,5.309 12.656,2.358 9.016,2.358 ZM9.794,11.953 L8.013,11.953 L8.013,9.888 L5.984,9.888 L5.984,8.107 L8.013,8.107 L8.013,5.998 L9.794,5.998 L9.794,8.107 L11.939,8.107 L11.939,9.888 L9.794,9.888 L9.794,11.953 Z" />
+              </svg></a>
+          </div>
         </div>
       </div>
 
@@ -266,11 +632,11 @@
           <div class="top-trends__item">
             <div class="top-trends__item-inner">
               <div class="top-trends__img-box">
-                <img class="top-trends__img" src="images/trends/model.png" alt="">
+                <a href="#"><img class="top-trends__img" src="images/trends/model.png" alt=""></a>
               </div>
               <div class="top-trends__content">
                 <h3 class="top-trends__title">Top 20 trends for</h3>
-                <span class="top-trends__sub-title">Spring/Summer</span>
+                <span class="top-trends__sub-title"><a href="#">Spring/Summer</a></span>
                 <p class="top-trends__text">With Seventies influences from Saturday night fever to hippy deluxe,
                   a khaki nod to military style alongside nautical accents, experiments
                   with transparency, patchworks of vintage prints and a mix & match
@@ -395,7 +761,7 @@
       </div>
     </div>
 
-  </footer>
+  </footer> -->
 
 
 
