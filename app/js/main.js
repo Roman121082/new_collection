@@ -4,12 +4,12 @@ $(function () {
   $('.burger').on('click', function () {
     $('.burger__menu-list').toggleClass('burger__menu-list--active')
   });
-  // $('.header-slider').slick({
-  //   fade: true,
-  //   arrows: false,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  // });
+  $('.header-slider').slick({
+    fade: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
 
 
 
