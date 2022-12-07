@@ -420,97 +420,38 @@
 }
 
 
-.tabs-content,
-.tabs-content__active {
+.tabs-content {
   display: block;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  height: 1350px;
+  min-height: 1350px;
   margin-bottom: 50px;
+  grid-row: row;
 
-  &__item-1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
+  &__item {
+    min-height: 305px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
-
 
   &__item-2 {
-    grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column: span 4;
     grid-row: span 2;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
 
-  &__item-3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
 
   &__item-4 {
-    grid-column-start: 1;
-    grid-column-end: span 3;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    grid-column: span 3;
   }
 
-  &__item-5 {
-    grid-column-start: 4;
-    grid-column-end: span 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
 
-  &__item-6 {
-    grid-column-start: 5;
-    grid-column-end: span 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-
-  &__item-7 {
-    grid-column-start: 1;
-    grid-column-end: span 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-
-  &__item-8 {
-    grid-column-start: 2;
-    grid-column-end: span 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
 
   &__item-9 {
-    grid-column-start: 3;
-    grid-column-end: span 2;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    grid-column: span 2;
   }
 
-  &__item-10 {
-    grid-column-start: 5;
-    grid-column-end: span 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
 
 }
 
