@@ -1,1 +1,1 @@
-# new_collection https://roman121082.github.io/new_collection/app/
+https://github.com/Roman121082/new_collection.git
